@@ -1,0 +1,13 @@
+{
+  "canisters": {
+    "car_store": {
+      "type": "custom",
+      "main": "src/index.ts",
+      "candid": "src/index.did",
+      "build": "npx azle car_store",
+      "ts": "src/index.ts",
+      "wasm": ".azle/car_store/car_store.wasm",
+      "gzip": true
+    }
+  }
+}

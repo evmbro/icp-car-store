@@ -1,0 +1,7 @@
+service: () -> {
+    createCarListing: (text, text, int, int, text, text) -> (text);
+    getCarById: (text) -> (opt record {id:text; model:text; image_url:text; make:text; year:int; description:text; owner_email:text; is_available:bool; price:int}) query;
+    getCarListings: () -> (vec record {id:text; model:text; image_url:text; make:text; year:int; description:text; owner_email:text; is_available:bool; price:int}) query;
+    toggleCarAvailability: (text) -> ();
+    updateCarListing: (text, text, text, int, int, text, text, bool) -> (text);
+}
